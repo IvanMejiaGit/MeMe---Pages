@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<!-- saved from url=(1507)https://app-uai3066694-llm-prd-s3-backendlb.s3.amazonaws.com/users/212342278/regular-1774910315656-sgpn2h2bkwen2/e165cb7e-4efd-4668-bfdc-5e9ced7f99d6/generated_e165cb7e.html?AWSAccessKeyId=ASIA3JTVG6SQ7TI7DA65&Signature=Q1UXPxsFvn9DMcSdJYrUGX%2BtqHA%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEGsaCXVzLWVhc3QtMSJIMEYCIQDXyHpnl4cs%2BOg1iH%2Bzz2n4Eo6K%2BU%2Bl10I9f1j9j00pHwIhALQaCai6qG2xJWOlL9Y3POKF3ZTUtKb04MxUyz%2BIlSV9KrkECDQQABoMNzc2NTYxMTYxMzc3IgwlPgJz%2F%2BkggbvfpVUqlgTDArdxWfy83hjiexsM3NEsHErLJy9tM%2FOoi8JPz076Zs8I%2FDvmxxvrMonsnDXb2VXqVZzd%2FUr6n6hxJWmp%2FPK0ZXh7JBBnV8%2BW6soGpR7PFdl%2BL7XqXPGxRZRnREClSccOwcFmiNVEJYo9kyYeh5vh7V2XLse%2BGzpHzNiqVL%2BljkawQ4oJSzeSMQWCuxWxg4Ep4wt8mXOIIJg7IuM0T4MwY0wA2VBRYiCYaguE0Ddi0mDz5PJ31CmvCnDLZvqGlu10coiY3784RYTGZ1otxdVuXqEnXS0GJjmCMruN%2FpuYKUAZW5vMoEZ%2FtiEAbgyKDttkPEncXFFly2jUM5z%2FyY682R%2BDRiRwKH3vCP%2FnV90mcRhe7TC7v1YvPdqajKLij5%2F2RaceOluKdcULJ5AAw0hHaEJT0OoPtvDJq%2Bz%2FhrUz1ofkawp6LSM0fBAfVDRa7EHTm5hk6qNGCj296z%2BeedMTI68RaJAg8NrMbUIwpD292a7joI4PU5ZUWv6Vsy%2B4hz6j8iXBTWqua6eumH%2FgxQio6Aac3n1Eotv2lix1BYuiNbYgs6OIUBU3dME5zXxZKX%2BYqjz53Lh6vSkRmjPEOW%2B7MYrpFqoKJOyE137D0DJhEmI04scuoFQW6nZm%2FeHMCXtJ%2B%2BNlMC2GWHua5fxg9fADi3r91Y1Jcs%2B%2F48Ob%2BwBYit%2BMhsr2XI9uNXD76CDfMDAS5bL41iowmuON0AY6pQEnr9ypluXsneDwOPd4nIC9ScVs%2Fjp0BKKR7mKErkjJukVZ6Kcs1OQOKkOvfxUgNr1ces5ee2r%2BIvfwzeCs8QaOxv%2BVDrUMunfIIcOyiq07TzbbvFTrwc3YGM5P3JSLmW1Ta3Me0UPdXE%2BZhkiev%2BBHV0NMQcFb7%2FraR%2FRfDEX0dhnyR3ouo9bPndxQBUwo1kex7icN0iO5QELa3ViABHc26ZJp2ak%3D&Expires=1778628912 -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGROSOLUCIONES — Propuesta MEME</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* NAVIGATION DOTS */
+        .nav-dots {
+            position: fixed;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .nav-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-dot.active {
+            background: #4ade80;
+            transform: scale(1.4);
+        }
+
+        /* SLIDES */
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-content {
+            max-width: 1100px;
+            width: 100%;
+            z-index: 2;
+        }
+
+        /* BACKGROUNDS */
+        .slide-1 { background: linear-gradient(135deg, #0a2e0a 0%, #0d4a1a 50%, #0a0a0a 100%); }
+        .slide-2 { background: linear-gradient(135deg, #0a0a2e 0%, #1a1a4a 50%, #0a0a0a 100%); }
+        .slide-3 { background: linear-gradient(135deg, #1a0a00 0%, #2e1a00 50%, #0a0a0a 100%); }
+        .slide-4 { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); }
+        .slide-5 { background: linear-gradient(135deg, #0a1a2e 0%, #0d2a4a 50%, #0a0a0a 100%); }
+        .slide-6 { background: linear-gradient(135deg, #1a0a2e 0%, #2e1a4a 50%, #0a0a0a 100%); }
+        .slide-7 { background: linear-gradient(135deg, #0a2e1a 0%, #0d4a2e 50%, #0a0a0a 100%); }
+        .slide-8 { background: linear-gradient(135deg, #0d2e00 0%, #1a4a00 50%, #0a0a0a 100%); }
+
+        /* DECORATIVE CIRCLES */
+        .slide::before {
+            content: '';
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(74, 222, 128, 0.03);
+            top: -100px;
+            right: -100px;
+            z-index: 1;
+        }
+
+        .slide::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: rgba(74, 222, 128, 0.05);
+            bottom: -50px;
+            left: -50px;
+            z-index: 1;
+        }
+
+        /* TYPOGRAPHY */
+        .badge {
+            display: inline-block;
+            background: rgba(74, 222, 128, 0.15);
+            border: 1px solid rgba(74, 222, 128, 0.4);
+            color: #4ade80;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 6vw, 72px);
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: clamp(18px, 2.5vw, 24px);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .green { color: #4ade80; }
+        .yellow { color: #fbbf24; }
+        .blue { color: #60a5fa; }
+        .purple { color: #c084fc; }
+        .orange { color: #fb923c; }
+
+        .subtitle {
+            font-size: clamp(14px, 2vw, 18px);
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* CARDS */
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 16px;
+            padding: 24px;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: rgba(74, 222, 128, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .card.featured {
+            background: rgba(74, 222, 128, 0.08);
+            border-color: rgba(74, 222, 128, 0.4);
+        }
+
+        .card.warning {
+            background: rgba(251, 191, 36, 0.08);
+            border-color: rgba(251, 191, 36, 0.4);
+        }
+
+        /* GRIDS */
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+        }
+
+        /* TABLES */
+        .table-container {
+            overflow-x: auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th {
+            background: rgba(74, 222, 128, 0.15);
+            color: #4ade80;
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.06);
+            color: rgba(255,255,255,0.85);
+        }
+
+        tr:last-child td { border-bottom: none; }
+        tr:hover td { background: rgba(255,255,255,0.03); }
+
+        .highlight-row td {
+            background: rgba(74, 222, 128, 0.08);
+            color: #4ade80;
+            font-weight: 600;
+        }
+
+        /* STAT BOXES */
+        .stat-box {
+            text-align: center;
+            padding: 24px;
+        }
+
+        .stat-number {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 800;
+            color: #4ade80;
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .stat-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.5);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* COMPARISON */
+        .vs-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .vs-badge {
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 14px;
+            color: rgba(255,255,255,0.5);
+        }
+
+        /* TIMELINE */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, #4ade80, rgba(74,222,128,0.1));
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 24px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 6px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #4ade80;
+            border: 2px solid #0a0a0a;
+        }
+
+        /* RECOMMENDATION BOX */
+        .rec-box {
+            background: linear-gradient(135deg, rgba(74,222,128,0.15), rgba(74,222,128,0.05));
+            border: 2px solid rgba(74, 222, 128, 0.5);
+            border-radius: 20px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        /* PRICE TAG */
+        .price-tag {
+            display: flex;
+            align-items: baseline;
+            gap: 4px;
+        }
+
+        .price-currency { font-size: 18px; color: #4ade80; }
+        .price-amount { font-size: 42px; font-weight: 800; color: #4ade80; }
+        .price-period { font-size: 14px; color: rgba(255,255,255,0.5); }
+
+        /* CHECK LIST */
+        .check-list { list-style: none; }
+        .check-list li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: rgba(255,255,255,0.8);
+            font-size: 15px;
+        }
+        .check-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #4ade80;
+            font-weight: 700;
+        }
+
+        .x-list { list-style: none; }
+        .x-list li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: rgba(255,255,255,0.5);
+            font-size: 15px;
+        }
+        .x-list li::before {
+            content: '✗';
+            position: absolute;
+            left: 0;
+            color: #f87171;
+        }
+
+        /* PROGRESS BAR */
+        .progress-bar {
+            height: 8px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 4px;
+            background: linear-gradient(to right, #4ade80, #22d3ee);
+            transition: width 1s ease;
+        }
+
+        /* DIVIDER */
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(74,222,128,0.3), transparent);
+            margin: 24px 0;
+        }
+
+        /* LOGO AREA */
+        .logo-mark {
+            font-size: 48px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #4ade80, #22d3ee);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* SCROLL INDICATOR */
+        .scroll-hint {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgba(255,255,255,0.3);
+            font-size: 12px;
+            text-align: center;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(8px); }
+        }
+
+        /* DISCLAIMER BOX */
+        .disclaimer {
+            background: rgba(251, 191, 36, 0.08);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.6);
+            line-height: 1.6;
+        }
+
+        .disclaimer strong { color: #fbbf24; }
+
+        /* STAR BADGE */
+        .star-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, rgba(251,191,36,0.2), rgba(251,191,36,0.1));
+            border: 1px solid rgba(251,191,36,0.4);
+            color: #fbbf24;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAV DOTS -->
+<div class="nav-dots" id="navDots"><div class="nav-dot"></div><div class="nav-dot active"></div><div class="nav-dot"></div><div class="nav-dot"></div><div class="nav-dot"></div><div class="nav-dot"></div><div class="nav-dot"></div><div class="nav-dot"></div></div>
+
+<!-- SLIDE 1: PORTADA -->
+<div class="slide slide-1" id="slide-0">
+    <div class="slide-content" style="text-align: center;">
+        <div class="logo-mark">MEME</div>
+        <div class="badge" style="margin-top: 16px;">Propuesta Comercial 2026</div>
+        <h1>Sistema <span class="green">ERP + CRM</span><br>para AGROSOLUCIONES</h1>
+        <p class="subtitle" style="max-width: 600px; margin: 0 auto 40px;">
+            Plataforma integral para gestión de su empresa agropecuaria de invernadero.<br>
+            Diseñada para ser simple, poderosa y accesible desde cualquier dispositivo.
+        </p>
+        <div class="grid-4" style="max-width: 800px; margin: 0 auto;">
+            <div class="card" style="text-align: center; padding: 16px;">
+                <div style="font-size: 28px; margin-bottom: 8px;">🌱</div>
+                <div style="font-size: 12px; color: rgba(255,255,255,0.5);">ERP Completo</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 16px;">
+                <div style="font-size: 28px; margin-bottom: 8px;">🤝</div>
+                <div style="font-size: 12px; color: rgba(255,255,255,0.5);">CRM Integrado</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 16px;">
+                <div style="font-size: 28px; margin-bottom: 8px;">🤖</div>
+                <div style="font-size: 12px; color: rgba(255,255,255,0.5);">IA Opcional</div>
+            </div>
+            <div class="card" style="text-align: center; padding: 16px;">
+                <div style="font-size: 28px; margin-bottom: 8px;">📱</div>
+                <div style="font-size: 12px; color: rgba(255,255,255,0.5);">TDA-Friendly</div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-hint">↓ Deslizar para continuar</div>
+</div>
+
+<!-- SLIDE 2: EL SISTEMA -->
+<div class="slide slide-2" id="slide-1">
+    <div class="slide-content">
+        <div class="badge">El Sistema</div>
+        <h2>3 Módulos. <span class="blue">Una sola plataforma.</span></h2>
+        <p class="subtitle">Todo lo que AGROSOLUCIONES necesita para operar, vender y crecer.</p>
+        <div class="grid-3">
+            <div class="card">
+                <div style="font-size: 32px; margin-bottom: 16px;">💼</div>
+                <h3 class="blue">Módulo Comercial</h3>
+                <div class="divider"></div>
+                <ul class="check-list">
+                    <li>Dashboard de ventas en tiempo real</li>
+                    <li>Captura de pedidos rápida</li>
+                    <li>Control de crédito por cliente</li>
+                    <li>Scoring de comportamiento</li>
+                    <li>Cuentas por cobrar y pagar</li>
+                    <li>Proyección de flujo de efectivo</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div style="font-size: 32px; margin-bottom: 16px;">📊</div>
+                <h3 class="blue">Módulo Contable</h3>
+                <div class="divider"></div>
+                <ul class="check-list">
+                    <li>Facturas CFDI 4.0 incluidas</li>
+                    <li>Emisión y recepción de XML/PDF</li>
+                    <li>Portal de clientes self-service</li>
+                    <li>Complementos de pago</li>
+                    <li>Reportes financieros</li>
+                    <li>Exportaciones fiscales</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div style="font-size: 32px; margin-bottom: 16px;">🏭</div>
+                <h3 class="blue">Módulo Administrativo</h3>
+                <div class="divider"></div>
+                <ul class="check-list">
+                    <li>Gestión de inventario</li>
+                    <li>Catálogo de productos</li>
+                    <li>Gestión de proveedores</li>
+                    <li>Logística de entregas</li>
+                    <li>Alertas de bajo stock</li>
+                    <li>Predicción estacional (con IA)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card warning" style="margin-top: 20px; padding: 16px 24px;">
+            <p style="font-size: 14px; color: rgba(255,255,255,0.7);">
+                🎯 <strong style="color: #fbbf24;">Diseño TDA-Friendly:</strong> Interfaz minimalista, una acción por pantalla, botones grandes con iconos claros y código de colores verde/amarillo/rojo para máxima claridad operativa.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 3: ROLES -->
+<div class="slide slide-3" id="slide-2">
+    <div class="slide-content">
+        <div class="badge">Accesos y Roles</div>
+        <h2>4 Roles. <span class="orange">Cada uno en su lugar.</span></h2>
+        <p class="subtitle">El sistema se adapta a cada miembro del equipo con accesos personalizados.</p>
+        <div class="grid-2">
+            <div class="card featured">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div style="font-size: 28px;">👑</div>
+                    <div>
+                        <h3 class="green">Admin / Owner</h3>
+                        <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Acceso total</div>
+                    </div>
+                </div>
+                <ul class="check-list">
+                    <li>Acceso a todos los módulos</li>
+                    <li>Configurar límites de crédito</li>
+                    <li>Ver resúmenes financieros</li>
+                    <li>Subir facturas y documentos</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div style="font-size: 28px;">🧮</div>
+                    <div>
+                        <h3 class="blue">Contadora</h3>
+                        <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Módulo contable</div>
+                    </div>
+                </div>
+                <ul class="check-list">
+                    <li>Gestión de facturas CFDI</li>
+                    <li>Complementos de pago</li>
+                    <li>Cuentas por cobrar/pagar</li>
+                </ul>
+                <ul class="x-list" style="margin-top: 8px;">
+                    <li>No puede modificar límites de crédito</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div style="font-size: 28px;">🛒</div>
+                    <div>
+                        <h3 class="orange">Vendedor</h3>
+                        <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Captura de pedidos</div>
+                    </div>
+                </div>
+                <ul class="check-list">
+                    <li>Captura rápida de pedidos</li>
+                    <li>Verificación de crédito en tiempo real</li>
+                    <li>Alertas de límite de crédito</li>
+                </ul>
+                <ul class="x-list" style="margin-top: 8px;">
+                    <li>No puede modificar créditos</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div style="font-size: 28px;">👤</div>
+                    <div>
+                        <h3 class="purple">Portal Cliente</h3>
+                        <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Self-service</div>
+                    </div>
+                </div>
+                <ul class="check-list">
+                    <li>Ver historial de compras</li>
+                    <li>Descargar facturas XML/PDF</li>
+                    <li>Subir comprobantes de pago</li>
+                    <li>Ver saldo y crédito disponible</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 4: OPCIONES DE COMPRA -->
+<div class="slide slide-4" id="slide-3">
+    <div class="slide-content">
+        <div class="badge">Inversión Inicial</div>
+        <h2>Elige tu punto de <span class="green">partida.</span></h2>
+        <p class="subtitle">Dos opciones de desarrollo. Misma calidad. Diferente nivel de inteligencia.</p>
+
+        <div class="vs-container" style="margin-bottom: 30px;">
+            <div class="card" style="padding: 32px; text-align: center;">
+                <div style="font-size: 40px; margin-bottom: 16px;">⚙️</div>
+                <h3 style="margin-bottom: 8px;">Sin IA</h3>
+                <div style="color: rgba(255,255,255,0.5); font-size: 14px; margin-bottom: 24px;">Sistema ERP+CRM completo</div>
+                <div class="price-tag" style="justify-content: center; margin-bottom: 8px;">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount">69,861</span>
+                </div>
+                <div style="color: rgba(255,255,255,0.4); font-size: 13px;">MXN + IVA</div>
+                <div style="color: rgba(255,255,255,0.3); font-size: 12px; margin-top: 4px;">$81,038 MXN c/IVA</div>
+                <div class="divider"></div>
+                <ul class="check-list" style="text-align: left;">
+                    <li>3 módulos completos</li>
+                    <li>4 roles de usuario</li>
+                    <li>CFDI 4.0 incluido</li>
+                    <li>Portal cliente</li>
+                </ul>
+                <ul class="x-list" style="text-align: left; margin-top: 8px;">
+                    <li>Sin predicción estacional</li>
+                    <li>Sin scoring inteligente</li>
+                </ul>
+            </div>
+
+            <div class="vs-badge">VS</div>
+
+            <div class="card featured" style="padding: 32px; text-align: center; position: relative;">
+                <div class="star-badge" style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%);">
+                    ⭐ RECOMENDADO
+                </div>
+                <div style="font-size: 40px; margin-bottom: 16px;">🤖</div>
+                <h3 style="margin-bottom: 8px;">Con IA</h3>
+                <div style="color: rgba(255,255,255,0.5); font-size: 14px; margin-bottom: 24px;">ERP+CRM + Inteligencia Artificial</div>
+                <div class="price-tag" style="justify-content: center; margin-bottom: 8px;">
+                    <span class="price-currency">$</span>
+                    <span class="price-amount" style="color: #4ade80;">110,000</span>
+                </div>
+                <div style="color: rgba(255,255,255,0.4); font-size: 13px;">MXN + IVA</div>
+                <div style="color: rgba(255,255,255,0.3); font-size: 12px; margin-top: 4px;">$127,600 MXN c/IVA</div>
+                <div class="divider"></div>
+                <ul class="check-list" style="text-align: left;">
+                    <li>Todo lo del plan Sin IA</li>
+                    <li>Predicción de temporada alta</li>
+                    <li>Scoring inteligente de clientes</li>
+                    <li>Recomendaciones de inventario</li>
+                    <li>Alertas predictivas automáticas</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="disclaimer">
+            <strong>⚠️ Disclaimer IA:</strong> Las predicciones y recomendaciones del módulo de IA son orientativas y están basadas en datos históricos. No constituyen garantías de exactitud ni resultados específicos. El costo del servicio de IA en producción puede variar conforme a las tarifas del proveedor (OpenAI, Anthropic, Google u equivalentes), con notificación de 30 días de anticipación.
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 5: PLANES MENSUALES -->
+<div class="slide slide-5" id="slide-4">
+    <div class="slide-content">
+        <div class="badge">Suscripción Mensual</div>
+        <h2>Planes que <span class="blue">crecen contigo.</span></h2>
+        <p class="subtitle">Elige el plan que mejor se adapte a tu equipo. Cambia cuando lo necesites.</p>
+
+        <div class="table-container" style="margin-bottom: 24px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Paquete</th>
+                        <th>Usuarios</th>
+                        <th>Sin IA / mes</th>
+                        <th>Con IA / mes</th>
+                        <th>Diferencia IA</th>
+                        <th>c/IVA Sin IA</th>
+                        <th>c/IVA Con IA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Plan Individual</strong></td>
+                        <td>Por usuario</td>
+                        <td>$160 MXN/usr</td>
+                        <td class="green">$195 MXN/usr</td>
+                        <td class="yellow">+$35/usr</td>
+                        <td>$185.60/usr</td>
+                        <td>$226.20/usr</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Starter</strong></td>
+                        <td>1 — 20</td>
+                        <td>$1,800 MXN</td>
+                        <td class="green">$2,500 MXN</td>
+                        <td class="yellow">+$700</td>
+                        <td>$2,088</td>
+                        <td>$2,900</td>
+                    </tr>
+                    <tr class="highlight-row">
+                        <td><strong>Growth ⭐</strong></td>
+                        <td>21 — 50</td>
+                        <td>$3,100 MXN</td>
+                        <td>$3,800 MXN</td>
+                        <td>+$700</td>
+                        <td>$3,596</td>
+                        <td>$4,408</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Enterprise</strong></td>
+                        <td>51 — 100</td>
+                        <td>$5,200 MXN</td>
+                        <td class="green">$5,900 MXN</td>
+                        <td class="yellow">+$700</td>
+                        <td>$6,032</td>
+                        <td>$6,844</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3 class="blue" style="margin-bottom: 12px;">📦 Todos los planes incluyen:</h3>
+                <ul class="check-list">
+                    <li>Licencia de uso de la plataforma</li>
+                    <li>Hosting y manejo de datos</li>
+                    <li>Soporte técnico</li>
+                    <li>Actualizaciones del sistema</li>
+                    <li>Facturación CFDI 4.0 (100 facturas/mes)</li>
+                </ul>
+            </div>
+            <div class="card featured">
+                <h3 class="green" style="margin-bottom: 12px;">🤖 Con IA además incluye:</h3>
+                <ul class="check-list">
+                    <li>GPT-4o Mini exclusivo para AGROSOLUCIONES</li>
+                    <li>Predicción de temporada alta automática</li>
+                    <li>Scoring inteligente de clientes</li>
+                    <li>Recomendaciones de inventario</li>
+                    <li>Alertas predictivas contextuales</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 6: PLANES DE SOPORTE -->
+<div class="slide slide-6" id="slide-5">
+    <div class="slide-content">
+        <div class="badge">Soporte y Desarrollo</div>
+        <h2>El primer año es <span class="purple">crucial.</span></h2>
+        <p class="subtitle">Asegura el éxito de tu plataforma con horas de desarrollo incluidas desde el inicio.</p>
+
+        <div class="grid-2" style="margin-bottom: 24px;">
+            <div class="card">
+                <h3 style="margin-bottom: 16px;">📅 Planes Mensuales</h3>
+                <div style="margin-bottom: 16px; padding: 16px; background: rgba(255,255,255,0.03); border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-weight: 600;">Starter Dev</span>
+                        <span class="green" style="font-weight: 700;">$1,600 MXN/mes</span>
+                    </div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 8px;">4 hrs/mes — Acumula hasta 16 hrs — Atención prioritaria</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,0.4);">
+                        <span>Precio lista: $2,000</span>
+                        <span class="yellow">Ahorro: 20%</span>
+                    </div>
+                </div>
+                <div style="padding: 16px; background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.2); border-radius: 12px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span style="font-weight: 600;">Growth Dev ⭐</span>
+                        <span class="green" style="font-weight: 700;">$5,600 MXN/mes</span>
+                    </div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 8px;">16 hrs/mes — Acumula hasta 24 hrs — Prioritario + planeación mensual</div>
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,0.4);">
+                        <span>Precio lista: $8,000</span>
+                        <span class="yellow">Ahorro: 30%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card featured">
+                <h3 class="green" style="margin-bottom: 16px;">📦 Paquetes Anuales ⭐ Recomendado</h3>
+                <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 16px;">Las horas no caducan durante 12 meses desde la compra.</div>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Paquete</th>
+                                <th>Horas</th>
+                                <th>Precio</th>
+                                <th>Costo/hr</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pack 10</td>
+                                <td>10 hrs</td>
+                                <td>$4,000</td>
+                                <td>$400/hr</td>
+                            </tr>
+                            <tr>
+                                <td>Pack 25</td>
+                                <td>25 hrs</td>
+                                <td>$9,500</td>
+                                <td>$380/hr</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>Pack 50 ⭐</td>
+                                <td>50 hrs</td>
+                                <td>$17,500</td>
+                                <td>$350/hr</td>
+                            </tr>
+                            <tr>
+                                <td>Pack 100</td>
+                                <td>100 hrs</td>
+                                <td>$32,500</td>
+                                <td>$325/hr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card warning">
+            <h3 class="yellow" style="margin-bottom: 12px;">📈 ¿Por qué el primer año es diferente?</h3>
+            <div class="grid-3">
+                <div style="text-align: center; padding: 12px;">
+                    <div style="font-size: 28px; margin-bottom: 8px; color: #fbbf24;">~25 hrs</div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Meses 1-3<br>Ajustes intensos post-lanzamiento</div>
+                </div>
+                <div style="text-align: center; padding: 12px;">
+                    <div style="font-size: 28px; margin-bottom: 8px; color: #fb923c;">~12 hrs</div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Meses 4-6<br>Ajustes medianos</div>
+                </div>
+                <div style="text-align: center; padding: 12px;">
+                    <div style="font-size: 28px; margin-bottom: 8px; color: #4ade80;">~8 hrs</div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Meses 7-12<br>Mejoras menores</div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div style="text-align: center; font-size: 15px; color: rgba(255,255,255,0.7);">
+                Total estimado primer año: <strong style="color: #fbbf24;">35-55 horas</strong> → Pack 50 hrs cubre perfectamente este rango
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 7: COMPARATIVA DE MERCADO -->
+<div class="slide slide-7" id="slide-6">
+    <div class="slide-content">
+        <div class="badge">Comparativa de Mercado</div>
+        <h2>¿Por qué <span class="green">MEME</span> es la mejor opción?</h2>
+        <p class="subtitle">AGROSOLUCIONES merece un sistema hecho a su medida, no una solución genérica.</p>
+
+        <div class="table-container" style="margin-bottom: 24px;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Software</th>
+                        <th>Origen</th>
+                        <th>Precio/usuario</th>
+                        <th>ERP+CRM</th>
+                        <th>IA</th>
+                        <th>CFDI</th>
+                        <th>Soporte MX</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SAP Business One</td>
+                        <td>Alemania</td>
+                        <td style="color: #f87171;">$3,500-$8,000</td>
+                        <td>✅</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                        <td style="color: #f87171;">❌</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                    </tr>
+                    <tr>
+                        <td>Odoo</td>
+                        <td>Bélgica</td>
+                        <td style="color: #f87171;">$800-$2,500</td>
+                        <td>✅</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                    </tr>
+                    <tr>
+                        <td>Aspel NOI/COI</td>
+                        <td>México</td>
+                        <td style="color: #fbbf24;">$600-$1,500</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                        <td style="color: #f87171;">❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td>Microsip</td>
+                        <td>México</td>
+                        <td style="color: #fbbf24;">$500-$1,200</td>
+                        <td style="color: #fbbf24;">⚠️</td>
+                        <td style="color: #f87171;">❌</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr style="background: rgba(74,222,128,0.05);">
+                        <td style="color: #4ade80; font-weight: 700;">MEME Sin IA ⭐</td>
+                        <td style="color: #4ade80;">México QRO</td>
+                        <td style="color: #4ade80; font-weight: 700;">$160 MXN</td>
+                        <td style="color: #4ade80;">✅</td>
+                        <td style="color: #f87171;">❌</td>
+                        <td style="color: #4ade80;">✅</td>
+                        <td style="color: #4ade80;">✅</td>
+                    </tr>
+                    <tr style="background: rgba(74,222,128,0.1);">
+                        <td style="color: #4ade80; font-weight: 700;">MEME Con IA ⭐⭐</td>
+                        <td style="color: #4ade80;">México QRO</td>
+                        <td style="color: #4ade80; font-weight: 700;">$195 MXN</td>
+                        <td style="color: #4ade80;">✅</td>
+                        <td style="color: #4ade80;">✅ Exclusiva</td>
+                        <td style="color: #4ade80;">✅</td>
+                        <td style="color: #4ade80;">✅</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="grid-4">
+            <div class="card" style="text-align: center;">
+                <div class="stat-number">50x</div>
+                <div class="stat-label">Más económico que SAP</div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Personalizado</div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="stat-number" style="font-size: 32px;">CFDI</div>
+                <div class="stat-label">4.0 Incluido</div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <div class="stat-number" style="font-size: 32px;">QRO</div>
+                <div class="stat-label">Soporte local</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SLIDE 8: RECOMENDACIÓN FINAL -->
+<div class="slide slide-8" id="slide-7">
+    <div class="slide-content">
+        <div class="badge">Recomendación Final</div>
+        <h2>Nuestra propuesta <span class="green">ideal para AGROSOLUCIONES.</span></h2>
+        <p class="subtitle">Basado en el análisis de sus necesidades, volumen de operación y potencial de crecimiento.</p>
+
+        <div class="grid-2" style="margin-bottom: 24px;">
+
+            <!-- SIN IA -->
+            <div class="card" style="padding: 28px;">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                    <div>
+                        <h3>Opción A — Sin IA</h3>
+                        <div style="color: rgba(255,255,255,0.4); font-size: 13px;">Para arrancar con lo esencial</div>
+                    </div>
+                    <div style="font-size: 28px;">⚙️</div>
+                </div>
+                <div class="divider"></div>
+                <div style="margin: 16px 0;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px;">Setup inicial</div>
+                    <div style="font-size: 24px; font-weight: 700; color: #60a5fa;">$69,861 MXN + IVA</div>
+                </div>
+                <div style="margin: 12px 0;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px;">Plan Growth mensual</div>
+                    <div style="font-size: 20px; font-weight: 700; color: #60a5fa;">$3,100 MXN/mes + IVA</div>
+                </div>
+                <div style="margin: 12px 0;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px;">Pack 50 hrs anuales (recomendado)</div>
+                    <div style="font-size: 20px; font-weight: 700; color: #60a5fa;">$17,500 MXN + IVA</div>
+                </div>
+                <div class="divider"></div>
+                <div style="background: rgba(96,165,250,0.1); border-radius: 10px; padding: 12px; text-align: center;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Inversión total primer año</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #60a5fa;">$124,561 MXN</div>
+                    <div style="font-size: 12px; color: rgba(255,255,255,0.3);">+ IVA | Setup + 12 meses + Pack 50hrs</div>
+                </div>
+            </div>
+
+            <!-- CON IA -->
+            <div class="rec-box">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+                    <div>
+                        <div class="star-badge" style="margin-bottom: 8px;">⭐ RECOMENDADO</div>
+                        <h3 class="green">Opción B — Con IA</h3>
+                        <div style="color: rgba(255,255,255,0.4); font-size: 13px;">Para maximizar operación desde el día 1</div>
+                    </div>
+                    <div style="font-size: 28px;">🤖</div>
+                </div>
+                <div class="divider"></div>
+                <div style="margin: 16px 0;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px;">Setup inicial con IA integrada</div>
+                    <div style="font-size: 24px; font-weight: 700; color: #4ade80;">$110,000 MXN + IVA</div>
+                </div>
+                <div style="margin: 12px 0;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px;">Plan Growth con IA mensual</div>
+                    <div style="font-size: 20px; font-weight: 700; color: #4ade80;">$3,800 MXN/mes + IVA</div>
+                </div>
+                <div style="margin: 12px 0;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 4px;">Pack 50 hrs anuales (recomendado)</div>
+                    <div style="font-size: 20px; font-weight: 700; color: #4ade80;">$17,500 MXN + IVA</div>
+                </div>
+                <div class="divider"></div>
+                <div style="background: rgba(74,222,128,0.15); border-radius: 10px; padding: 12px; text-align: center;">
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.5);">Inversión total primer año</div>
+                    <div style="font-size: 28px; font-weight: 800; color: #4ade80;">$173,100 MXN</div>
+                    <div style="font-size: 12px; color: rgba(255,255,255,0.3);">+ IVA | Setup + 12 meses + Pack 50hrs</div>
+                </div>
+                <div class="divider"></div>
+                <div style="font-size: 13px; color: rgba(255,255,255,0.6); text-align: left;">
+                    <strong style="color: #4ade80;">¿Por qué vale la diferencia?</strong><br>
+                    Con IA, AGROSOLUCIONES puede anticipar temporadas altas de rafia e insumos, optimizar inventario antes de que se agote y detectar clientes en riesgo automáticamente — funciones que ningún competidor ofrece a este precio.
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="text-align: center; padding: 24px;">
+            <p style="font-size: 15px; color: rgba(255,255,255,0.7); margin-bottom: 16px;">
+                🛡️ <strong style="color: white;">Cláusula de Protección:</strong> Si MEME dejara de operar, AGROSOLUCIONES puede adquirir el código fuente completo por <strong style="color: #4ade80;">$87,500 MXN + IVA</strong> para continuar operando de forma independiente.
+            </p>
+            <div class="grid-3" style="max-width: 600px; margin: 0 auto;">
+                <div style="text-align: center;">
+                    <div style="font-size: 22px; font-weight: 800; color: #4ade80;">99%</div>
+                    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Disponibilidad garantizada</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 22px; font-weight: 800; color: #4ade80;">4 hrs</div>
+                    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Respuesta máx. incidencias</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 22px; font-weight: 800; color: #4ade80;">30 días</div>
+                    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">Garantía de bugs sin costo</div>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <div style="font-size: 14px; color: rgba(255,255,255,0.3); margin-bottom: 8px;">¿Listo para empezar?</div>
+            <div style="font-size: 18px; color: rgba(255,255,255,0.7);">Contacta a <strong style="color: #4ade80;">Iván Mejía — MEME</strong></div>
+            <div style="font-size: 14px; color: rgba(255,255,255,0.4); margin-top: 4px;">Peña de Bernal 5151B Int. 50, Residencial El Refugio, Querétaro, Qro.</div>
+            <div style="margin-top: 16px; font-size: 12px; color: rgba(255,255,255,0.2);">
+                Documento informativo. Vigencia 30 días naturales desde emisión.
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const navDotsContainer = document.getElementById('navDots');
+
+    // Create nav dots
+    slides.forEach((slide, index) => {
+        const dot = document.createElement('div');
+        dot.className = 'nav-dot' + (index === 0 ? ' active' : '');
+        dot.addEventListener('click', () => {
+            slide.scrollIntoView({ behavior: 'smooth' });
+        });
+        navDotsContainer.appendChild(dot);
+    });
+
+    // Update active dot on scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = Array.from(slides).indexOf(entry.target);
+                document.querySelectorAll('.nav-dot').forEach((dot, i) => {
+                    dot.classList.toggle('active', i === index);
+                });
+            }
+        });
+    }, { threshold: 0.5 });
+
+    slides.forEach(slide => observer.observe(slide));
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        const activeIndex = Array.from(document.querySelectorAll('.nav-dot')).findIndex(d => d.classList.contains('active'));
+        if (e.key === 'ArrowDown' && activeIndex < slides.length - 1) {
+            slides[activeIndex + 1].scrollIntoView({ behavior: 'smooth' });
+        }
+        if (e.key === 'ArrowUp' && activeIndex > 0) {
+            slides[activeIndex - 1].scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+
+
+</body></html>
